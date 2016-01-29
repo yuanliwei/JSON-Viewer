@@ -54,14 +54,14 @@ output/
 *.scc
 *.bsc
 
-pnwtl/bin/*.lib
-pnwtl/bin/*.dll
-pnwtl/bin/*.exe
-pnwtl/bin/*.py
-pnwtl/bin/pypn
-pnwtl/bin/scripts
-pnwtl/bin/dep.txt
-pnwtl/bin/pndepcheck.manifest
+bin/*.lib
+bin/*.dll
+bin/*.exe
+bin/*.py
+bin/pypn
+bin/scripts
+bin/dep.txt
+bin/pndepcheck.manifest
 
 # Visual C++ cache files
 ipch/
