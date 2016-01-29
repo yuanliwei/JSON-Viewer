@@ -180,13 +180,13 @@ void openJSONDialog()
 	}
 
 	size_t asciiTextLen = end - start;
-	/*
+	
 	if (asciiTextLen == 0)
 	{ 
 		//MessageBox(nppData._nppHandle,TEXT("Please select a JSON string."),TEXT("JSON Viewer"),MB_OK|MB_ICONINFORMATION);
 		return;
 	}
-	*/
+	
 	
 
 	curJSON = new CHAR[asciiTextLen+1];
@@ -217,7 +217,7 @@ void formatSelectedJSON(){
 	
 	if (asciiTextLen == 0)
 	{ 
-		//MessageBox(nppData._nppHandle,TEXT("Please select a JSON string."),TEXT("JSON Viewer"),MB_OK|MB_ICONINFORMATION);
+		MessageBox(nppData._nppHandle,TEXT("Please select a JSON string."),TEXT("JSON Viewer"),MB_OK|MB_ICONINFORMATION);
 		return;
 	}
 
