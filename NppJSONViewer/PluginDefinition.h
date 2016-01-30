@@ -70,6 +70,7 @@ bool setCommand(size_t index, TCHAR *cmdName, PFUNCPLUGINCMD pFunc, ShortcutKey 
 void openJSONDialog();
 void openAboutDlg();
 void formatSelectedJSON();
+void stripSelectedJSON();
 #define CUSTOM_MARK_ERROR (WM_USER + 1)
 
 #endif //PLUGINDEFINITION_H
