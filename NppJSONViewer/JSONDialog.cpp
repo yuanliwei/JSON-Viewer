@@ -166,13 +166,7 @@ void JSONDialog::populateTree (HWND hWndDlg, HTREEITEM tree_root, json_t * json_
 			t.mask=TVIF_HANDLE;
 			if(SendDlgItemMessage(hWndDlg,IDC_TREE1,TVM_GETITEM,0,(LPARAM)&t))
 			{
-				int len = 0;
-				if (json_root->parent->text != NULL) {
-					len = strlen(json_root->parent->text) + 3;
-				}
-				if (json_root->text != NULL) {
-					len += strlen(json_root->text) + 1;
-				}
+				int len = strlen(json_root->parent->text) + 3 + strlen("True") + 1;
 				//int len=strlen(json_root->parent->text)+3+strlen(json_root->text)+1;
 				char *txt=new char[len];
 				memset(txt, 0, len);
@@ -210,7 +204,8 @@ void JSONDialog::populateTree (HWND hWndDlg, HTREEITEM tree_root, json_t * json_
 			t.mask=TVIF_HANDLE;
 			if(SendDlgItemMessage(hWndDlg,IDC_TREE1,TVM_GETITEM,0,(LPARAM)&t))
 			{
-				int len=strlen(json_root->parent->text)+3+strlen(json_root->text)+1;
+				//int len=strlen(json_root->parent->text)+3+strlen(json_root->text)+1;
+				int len = strlen(json_root->parent->text) + 3 + strlen("False") + 1; 
 				char *txt=new char[len];
 				memset(txt, 0, len);
 				char *unesc_text=json_unescape("False");

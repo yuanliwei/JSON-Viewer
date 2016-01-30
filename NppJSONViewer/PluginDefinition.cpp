@@ -72,6 +72,7 @@ void commandMenuInit()
 	formatJSONsk->_isCtrl = TRUE;
 	formatJSONsk->_isShift = TRUE;
 	formatJSONsk->_key = 'M';
+
 	ShortcutKey *stripJSONsk = new ShortcutKey();
 	stripJSONsk->_isAlt = TRUE;
 	stripJSONsk->_isCtrl = TRUE;
